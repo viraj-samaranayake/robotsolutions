@@ -10,10 +10,10 @@ function App() {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/robot-solutions/" element={<Home />} />
-          <Route path="/robot-solutions/services" element={<Services />} />
-          <Route path="/robot-solutions/about" element={<About />} />
-          <Route path="/robot-solutions/contact" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="services" element={<Services />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
     </Router>
