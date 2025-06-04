@@ -5,16 +5,16 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow sticky top-0 z-50">
+    <nav className="bg-blue-50 shadow sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/robotsolutions" className="text-2xl font-bold text-blue-600">
           Robot Solutions
         </Link>
-        <div className="hidden md:flex space-x-6 text-gray-700 font-medium">
-          <Link to="/robotsolutions">Home</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
+        <div className="hidden md:flex space-x-6 text-gray-700 font-semibold">
+          <Link to="/robotsolutions" className='hover:text-blue-600'>Home</Link>
+          <Link to="/services" className='hover:text-blue-600'>Services</Link>
+          <Link to="/about" className='hover:text-blue-600'>About</Link>
+          <Link to="/contact" className='hover:text-blue-600'>Contact</Link>
         </div>
         <button
           onClick={() => setOpen(!open)}
@@ -25,7 +25,7 @@ const Navbar = () => {
       </div>
 
       {open && (
-        <div className="md:hidden px-4 pb-4 space-y-2 text-gray-700">
+        <div className="md:hidden px-4 pb-4 flex flex-col items-center space-y-2 text-gray-700">
           <Link to="/robotsolutions" onClick={() => setOpen(false)}>
             Home
           </Link>
