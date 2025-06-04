@@ -8,7 +8,7 @@ const Footer = () => (
       <div>
         <h4 className="font-semibold mb-2">Links</h4>
         <ul className="space-y-1">
-          <li><a href="/" className="hover:underline">Home</a></li>
+          <li><a href="/robotsolutions" className="hover:underline">Home</a></li>
           <li><a href="/services" className="hover:underline">Services</a></li>
           <li><a href="/about" className="hover:underline">About</a></li>
           <li><a href="/contact" className="hover:underline">Contact</a></li>

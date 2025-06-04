@@ -11,7 +11,7 @@ const Navbar = () => {
           Robot Solutions
         </Link>
         <div className="hidden md:flex space-x-6 text-gray-700 font-medium">
-          <Link to="robotsolutions/">Home</Link>
+          <Link to="/robotsolutions">Home</Link>
           <Link to="/services">Services</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
@@ -26,7 +26,7 @@ const Navbar = () => {
 
       {open && (
         <div className="md:hidden px-4 pb-4 space-y-2 text-gray-700">
-          <Link to="/" onClick={() => setOpen(false)}>
+          <Link to="/robotsolutions" onClick={() => setOpen(false)}>
             Home
           </Link>
           <Link to="/services" onClick={() => setOpen(false)}>
