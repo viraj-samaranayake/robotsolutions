@@ -26,10 +26,18 @@ const Navbar = () => {
 
       {open && (
         <div className="md:hidden px-4 pb-4 space-y-2 text-gray-700">
-          <Link to="/" onClick={() => setOpen(false)}>Home</Link>
-          <Link to="/services" onClick={() => setOpen(false)}>Services</Link>
-          <Link to="/about" onClick={() => setOpen(false)}>About</Link>
-          <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
+          <Link to="/" onClick={() => setOpen(false)}>
+            Home
+          </Link>
+          <Link to="/services" onClick={() => setOpen(false)}>
+            Services
+          </Link>
+          <Link to="/about" onClick={() => setOpen(false)}>
+            About
+          </Link>
+          <Link to="/contact" onClick={() => setOpen(false)}>
+            Contact
+          </Link>
         </div>
       )}
     </nav>

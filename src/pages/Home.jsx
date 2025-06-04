@@ -23,6 +23,7 @@
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import AOS from 'aos';
+import heroBg from '/assets/hero-bg.jpg';
 
 const Home = () => {
   useEffect(() => {
@@ -32,7 +33,7 @@ const Home = () => {
   return (
     <section
       className="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center"
-      style={{ backgroundImage: "url('/assets/hero-bg.jpg')" }}
+      style={{ backgroundImage: `url(${heroBg})` }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div
